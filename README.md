@@ -1,2 +1,2 @@
 # renovate-config
-houses the shared renovate configuration
+houses the shared renovate configuration - see https://docs.renovatebot.com/config-presets/#github-hosted-presets
