@@ -5,7 +5,12 @@
   "labels": [
     "dependencies"
   ],
-  "postUpdateOptions": [
-    "gomodTidy"
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "groupName": "deps (patch)"
+    }
   ]
 }
