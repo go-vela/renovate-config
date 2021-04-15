@@ -5,9 +5,12 @@
   "labels": [
     "dependencies"
   ],
-  "postUpdateOptions": [
-    "gomodTidy"
-  ],
+  "golang": {
+    "postUpdateOptions": [
+      "gomodTidy",
+      "gomodUpdateImportPaths"
+    ]
+  },
   "packageRules": [
     {
       "matchUpdateTypes": [
