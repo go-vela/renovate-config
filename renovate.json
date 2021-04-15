@@ -10,5 +10,13 @@
       "gomodTidy",
       "gomodUpdateImportPaths"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "groupName": "deps (patch)"
+    }
+  ]
 }
