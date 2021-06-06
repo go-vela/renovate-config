@@ -6,6 +6,16 @@
     "dependencies"
   ],
   "golang": {
+    "packageRules": [
+      {
+        "matchPackageNames": [
+          "github.com/aws/aws-sdk-go"
+        ],
+        "extends": [
+          "schedule:monthly"
+        ]
+      }
+    ],
     "postUpdateOptions": [
       "gomodTidy",
       "gomodUpdateImportPaths"
