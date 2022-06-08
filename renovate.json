@@ -5,6 +5,7 @@
   "labels": [
     "dependencies"
   ],
+  "semanticCommits": "enabled",
   "golang": {
     "packageRules": [
       {
