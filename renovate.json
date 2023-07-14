@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "docker:pinDigests"
   ],
   "labels": [
     "dependencies"
@@ -31,7 +32,7 @@
       "matchUpdateTypes": [
         "patch"
       ],
-      "groupName": "deps (patch)"
+      "groupName": "deps patch"
     }
   ]
 }
