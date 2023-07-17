@@ -27,6 +27,9 @@
       "gomodUpdateImportPaths"
     ]
   },
+  "docker-compose": {
+    "enabled": false
+  },
   "packageRules": [
     {
       "matchUpdateTypes": [
@@ -34,10 +37,5 @@
       ],
       "groupName": "deps patch"
     },
-    {
-      "managers": ["docker-compose"],
-      "updateTypes": ["pin", "digest"],
-      "enabled": false
-    }
   ]
 }
