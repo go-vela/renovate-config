@@ -32,10 +32,17 @@
   },
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "patch"
+      "matchPackagePatterns": [
+        "*"
       ],
-      "groupName": "deps patch"
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest",
+        "pin"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch-digest-pin"
     },
   ]
 }
