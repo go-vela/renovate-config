@@ -8,20 +8,6 @@
   ],
   "semanticCommits": "enabled",
   "golang": {
-    "packageRules": [
-      {
-        "matchPackageNames": [
-          "github.com/aws/aws-sdk-go",
-          "github.com/hashicorp/go-getter",
-          "github.com/hashicorp/vault",
-          "golang.org/x/oauth2",
-          "github.com/urfave/cli/v2"
-        ],
-        "extends": [
-          "schedule:monthly"
-        ]
-      }
-    ],
     "postUpdateOptions": [
       "gomodTidy",
       "gomodUpdateImportPaths"
@@ -44,5 +30,24 @@
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch-digest-pin"
     },
+    {
+      "matchManagers": [ "golang" ],
+      "matchPackageNames": [
+        "github.com/aws/aws-sdk-go",
+        "github.com/hashicorp/go-getter",
+        "github.com/hashicorp/vault",
+        "golang.org/x/oauth2",
+        "github.com/urfave/cli/v2"
+      ],
+      "extends": [
+        "schedule:monthly"
+      ]
+    },
+    {
+      "matchManagers": [ "golang" ],
+      "matchRepositories": [ "go-vela/server", "go-vela/types" ],
+      "matchPackageNames": [ "github.com/buildkite/yaml" ],
+      "enabled": false
+    }
   ]
 }
