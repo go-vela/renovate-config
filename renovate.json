@@ -7,7 +7,7 @@
     "dependencies"
   ],
   "semanticCommits": "enabled",
-  "golang": {
+  "gomod": {
     "postUpdateOptions": [
       "gomodTidy",
       "gomodUpdateImportPaths"
@@ -31,7 +31,9 @@
       "groupSlug": "all-minor-patch-digest-pin"
     },
     {
-      "matchManagers": [ "golang" ],
+      "matchManagers": [
+        "gomod"
+      ],
       "matchPackageNames": [
         "github.com/aws/aws-sdk-go",
         "github.com/hashicorp/go-getter",
@@ -44,9 +46,16 @@
       ]
     },
     {
-      "matchManagers": [ "golang" ],
-      "matchRepositories": [ "go-vela/server", "go-vela/types" ],
-      "matchPackageNames": [ "github.com/buildkite/yaml" ],
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchRepositories": [
+        "go-vela/server",
+        "go-vela/types"
+      ],
+      "matchPackageNames": [
+        "github.com/buildkite/yaml"
+      ],
       "enabled": false
     }
   ]
