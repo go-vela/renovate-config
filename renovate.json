@@ -7,12 +7,6 @@
     "dependencies"
   ],
   "semanticCommits": "enabled",
-  "gomod": {
-    "postUpdateOptions": [
-      "gomodTidy",
-      "gomodUpdateImportPaths"
-    ]
-  },
   "docker-compose": {
     "enabled": false
   },
@@ -58,5 +52,9 @@
       ],
       "enabled": false
     }
+  ],
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths"
   ]
 }
