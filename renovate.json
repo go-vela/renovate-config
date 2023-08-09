@@ -25,6 +25,7 @@
         "minor",
         "patch",
         "digest",
+        "pinDigest",
         "pin"
       ],
       "groupName": "all non-major dependencies",
